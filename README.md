@@ -1,4 +1,4 @@
-# 🐧 LinuxMint Scripter
+# LinuxMint Scripter
 
 **Generador y revisor de scripts (Bash / Python) asistido por IA, hecho a medida para Linux Mint 22.3 «Zena»**
 
