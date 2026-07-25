@@ -75,9 +75,9 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 - Un navegador moderno (Chrome, Firefox, Edge…).
 - Conexión a internet para cargar las librerías de la interfaz (CodeMirror, tipografías) y para las llamadas al proveedor de IA elegido, salvo que sirvas esos recursos tú mismo.
 - **Una clave de API**, de alguno de estos dos tipos:
-  - Clave de la **API de Anthropic** (`console.anthropic.com`), o
   - Un servidor local (**LM Studio**, **Ollama**) o una API en la nube compatible con OpenAI (**OpenRouter, Groq, Mistral, Google, Hugging Face**).
-
+  - Clave de la **API de Anthropic**
+    
 ## Puesta en marcha
 
 1. Clona o descarga este repositorio.
