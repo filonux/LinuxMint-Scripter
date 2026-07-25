@@ -9,7 +9,7 @@
 
 LinuxMint Scripter es una aplicación web de **un único archivo HTML** (HTML + CSS + JavaScript vanilla, sin frameworks ni paso de compilación) que traduce peticiones en lenguaje natural a scripts de **Bash o Python 3** listos para ejecutar en Linux Mint 22.3, o a comandos de terminal sueltos. A diferencia de pedirle lo mismo a un chatbot genérico, lleva integrado el conocimiento específico de Mint (Cinnamon, Nemo, `snapd` bloqueado de fábrica, Flatpak/Flathub, `mintupdate-cli`, Timeshift…) y está explícitamente instruida para no disfrazar de "solución para Mint" un script pensado para Ubuntu/GNOME genérico.
 
-Habla con la **API de Anthropic (Claude)** o con **cualquier servidor/API compatible con OpenAI** —local (LM Studio, Ollama) o en la nube (OpenAI, OpenRouter, Groq, Mistral, Google, Hugging Face)— usando tu propia clave. No hay servidor intermedio: la conexión, el almacenamiento y el cifrado ocurren enteramente dentro de tu navegador.
+Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API compatible con OpenAI o Anthropic** — o en la nube (OpenRouter, Groq, Mistral, Google, Hugging Face)— usando tu propia clave. No hay servidor intermedio: la conexión, el almacenamiento y el cifrado ocurren enteramente dentro de tu navegador.
 
 📸 <img width="1909" height="852" alt="Inicio" src="https://github.com/user-attachments/assets/e02274cb-1da0-4dc5-81f4-bde2f158a415" />
 <img width="1901" height="852" alt="Revision-opciones" src="https://github.com/user-attachments/assets/95925ab2-d1c5-4bd7-a41a-e70702ce927f" />
@@ -76,7 +76,7 @@ Habla con la **API de Anthropic (Claude)** o con **cualquier servidor/API compat
 - Conexión a internet para cargar las librerías de la interfaz (CodeMirror, tipografías) y para las llamadas al proveedor de IA elegido, salvo que sirvas esos recursos tú mismo.
 - **Una clave de API**, de alguno de estos dos tipos:
   - Clave de la **API de Anthropic** (`console.anthropic.com`), o
-  - Un servidor local (**LM Studio**, **Ollama**) o una API en la nube compatible con OpenAI (**OpenAI, OpenRouter, Groq, Mistral, Google, Hugging Face**).
+  - Un servidor local (**LM Studio**, **Ollama**) o una API en la nube compatible con OpenAI (**OpenRouter, Groq, Mistral, Google, Hugging Face**).
 
 ## Puesta en marcha
 
