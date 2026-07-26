@@ -35,7 +35,7 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 - **Contexto real de Mint 22.3, no genérico.** El *system prompt* incorpora de serie los hechos que distinguen a Mint de Ubuntu/GNOME: gestor de archivos Nemo, snap bloqueado, Flatpak listo, particularidades de `mintupdate-cli`, Timeshift, Python 3.12 preinstalado…
 - **No solo genera, también audita.** La revisión iterativa encadena varios pases de auditoría/corrección sobre el script completo, inspirados en los bucles «planificar → aplicar → verificar» de la codificación agéntica.
 - **Cero instalación.** Es un `.html` suelto: se abre con doble clic y ya está.
-- **Multi-proveedor y con tu propia clave (BYOK).** Tú decides si usas Claude, un modelo local o cualquier API en la nube compatible con OpenAI.
+- **Multi-proveedor y con tu propia clave (BYOK).** Modelo local o cualquier API en la nube compatible con OpenAI o Claude.
 - **Nada sale de tu navegador** salvo las llamadas al proveedor de IA que elijas: sin cuentas, sin telemetría, sin backend propio que mantener.
 
 ## Características
@@ -100,10 +100,10 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 
 | Proveedor | Tipo | Clave requerida |
 |---|---|---|
-| Anthropic (Claude) | Directo, oficial | Sí |
 | LM Studio | Local | No |
 | Ollama | Local | No |
 | OpenAI | Nube | Sí |
+| Anthropic (Claude) | Directo, oficial | Sí |
 | OpenRouter | Nube | Sí |
 | Groq | Nube | Sí |
 | Mistral | Nube | Sí |
