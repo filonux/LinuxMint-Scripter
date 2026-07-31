@@ -42,7 +42,7 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 
 ### Generación asistida por IA
 - Chat en lenguaje natural para pedir scripts o comandos.
-- Selector de lenguaje: Auto (decide el modelo), 🐚 forzar Bash o 🐍 forzar Python 3.
+- Selector de lenguaje: Auto (decide el modelo), forzar Bash o forzar Python.
 - **Modo verificación**: pide una explicación línea a línea del script.
 - **Plantilla Terminal**: limita la respuesta a comandos sueltos, sin generar un script completo.
 - Plantillas rápidas para tareas habituales (instalar paquetes, cron, backup con `rsync`, unidad `systemd`, red con `nmcli`, limpieza del sistema, monitorización con alertas).
@@ -94,7 +94,7 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 2. El script aparece en el editor de la derecha, con resaltado de sintaxis.
 3. Revisa el aviso de comandos peligrosos o posibles errores si aparece alguno.
 4. Ajusta el script a mano, pide una revisión de un fragmento concreto, o lanza la revisión iterativa completa.
-5. Copia el script, guárdalo, o pulsa **📦 Instalar** para generar los pasos (o el `.sh`) de despliegue, con o sin tarea programada.
+5. Copia el script, guárdalo, o pulsa **Instalar** para generar los pasos (o el `.sh`) de despliegue, con o sin tarea programada.
 
 ## Proveedores de modelos compatibles
 
