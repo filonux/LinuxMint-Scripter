@@ -40,23 +40,23 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 
 ## Características
 
-### 💬 Generación asistida por IA
+### Generación asistida por IA
 - Chat en lenguaje natural para pedir scripts o comandos.
-- Selector de lenguaje: 🧠 Auto (decide el modelo), 🐚 forzar Bash o 🐍 forzar Python 3.
-- 🛡 **Modo verificación**: pide una explicación línea a línea del script.
-- ⌨ **Plantilla Terminal**: limita la respuesta a comandos sueltos, sin generar un script completo.
+- Selector de lenguaje: Auto (decide el modelo), 🐚 forzar Bash o 🐍 forzar Python 3.
+- **Modo verificación**: pide una explicación línea a línea del script.
+- **Plantilla Terminal**: limita la respuesta a comandos sueltos, sin generar un script completo.
 - Plantillas rápidas para tareas habituales (instalar paquetes, cron, backup con `rsync`, unidad `systemd`, red con `nmcli`, limpieza del sistema, monitorización con alertas).
 - Adjunta imágenes (Ctrl+V o arrastrar) para modelos con visión — útil para pegar una captura de un error de terminal.
 - Sube un script existente (`.sh`, `.py`, `.service`, `.yaml`…) para que el modelo lo revise.
 
-### 🔍 Revisión y edición de código
+### Revisión y edición de código
 - Editor con resaltado de sintaxis (CodeMirror) para Bash, Python, YAML y TOML, con buscar/reemplazar integrado.
 - Selecciona cualquier fragmento del script (o haz clic en el número de línea) para preguntar, corregir o pedir una explicación **solo de esa parte**, con vista de diff antes/después al aplicar un cambio.
-- 🔁 **Revisión iterativa**: de 1 a 3 pases automáticos de auditoría y corrección del script completo, con puntuación por pase y resumen de cambios.
+- **Revisión iterativa**: de 1 a 3 pases automáticos de auditoría y corrección del script completo, con puntuación por pase y resumen de cambios.
 - Detección local (heurística, basada en patrones) de comandos potencialmente destructivos (`rm -rf`, `dd`, `mkfs`, `shutil.rmtree`…) y de posibles problemas de sintaxis, resaltados directamente en el editor.
 - Acceso directo a **shellcheck.net** con el script ya copiado, para un análisis real.
 
-### 📦 Despliegue de scripts
+### Despliegue de scripts
 - Genera un paquete de despliegue a partir del script del editor: ruta de instalación, ámbito (solo tu usuario o todo el sistema) y permisos.
 - Programación opcional: tarea **cron** (con atajos: cada hora, diario, semanal, al arrancar), **servicio systemd** o **servicio + temporizador** (con `OnCalendar` y `Persistent=true`).
 - Pasos listos para copiar y pegar en la terminal, o descarga directa de un instalador `.sh`.
@@ -64,7 +64,7 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 ### ⌨️ Comandos rápidos (sin pasar por el modelo)
 - Chuleta local y buscable con una docena de categorías: APT, Flatpak, actualizaciones de Mint, archivos, permisos, procesos, servicios systemd, red, discos/backups, usuarios, compresión y ajustes de Cinnamon.
 
-### ⚖️ Comparador y utilidades
+### Comparador y utilidades
 - Compara dos proveedores/modelos en paralelo con el mismo prompt.
 - Historial local de scripts generados, con búsqueda.
 - Exporta la conversación completa a Markdown; guarda el script con nombre propio (la extensión se ajusta al lenguaje activo).
