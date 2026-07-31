@@ -61,7 +61,7 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 - Programación opcional: tarea **cron** (con atajos: cada hora, diario, semanal, al arrancar), **servicio systemd** o **servicio + temporizador** (con `OnCalendar` y `Persistent=true`).
 - Pasos listos para copiar y pegar en la terminal, o descarga directa de un instalador `.sh`.
 
-### ⌨️ Comandos rápidos (sin pasar por el modelo)
+### Comandos rápidos (sin pasar por el modelo)
 - Chuleta local y buscable con una docena de categorías: APT, Flatpak, actualizaciones de Mint, archivos, permisos, procesos, servicios systemd, red, discos/backups, usuarios, compresión y ajustes de Cinnamon.
 
 ### Comparador y utilidades
