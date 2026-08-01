@@ -11,10 +11,13 @@ LinuxMint Scripter es una aplicación web de **un único archivo HTML** (HTML + 
 
 Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API compatible con OpenAI o Anthropic** — o en la nube (OpenRouter, Groq, Mistral, Google, Hugging Face)— usando tu propia clave. No hay servidor intermedio: la conexión, el almacenamiento y el cifrado ocurren enteramente dentro de tu navegador.
 
-<img width="1909" height="852" alt="Inicio" src="https://github.com/user-attachments/assets/e02274cb-1da0-4dc5-81f4-bde2f158a415" />
-<img width="1901" height="852" alt="Revision-opciones" src="https://github.com/user-attachments/assets/95925ab2-d1c5-4bd7-a41a-e70702ce927f" />
-<img width="1907" height="852" alt="Revision-Iterativa" src="https://github.com/user-attachments/assets/83449d0b-fb4a-4899-bf19-1ea6ce37820e" />
-<img width="1912" height="853" alt="Historial-menu" src="https://github.com/user-attachments/assets/c2e9369a-db5f-4d0e-ab8a-bafdc1ec3c32" />
+
+<img width="1909" height="852" alt="1  Inicio" src="https://github.com/user-attachments/assets/9cf24f11-a3e9-4876-b5c4-3a9e4b941ed0" />
+<img width="1907" height="859" alt="2  Detecta-Errores" src="https://github.com/user-attachments/assets/de798e51-0222-45a2-bf6b-6d9d285e292e" />
+<img width="1919" height="864" alt="3  ejemplo-LinuxMintScripter" src="https://github.com/user-attachments/assets/1e2d8f7b-10ff-41e4-8ef8-eea689efcf35" />
+<img width="1901" height="852" alt="4  Revision-opciones" src="https://github.com/user-attachments/assets/9473ef85-299b-4e15-850b-17985820f952" />
+<img width="1912" height="853" alt="5  Historial-menu" src="https://github.com/user-attachments/assets/0d715ac7-5ef7-4fbe-a641-6ec8ad931672" />
+<img width="1907" height="852" alt="6  Revision-Iterativa" src="https://github.com/user-attachments/assets/e616c213-e752-4cee-a238-9b3a41996308" />
 
 
 ## Índice
@@ -81,7 +84,7 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 ## Puesta en marcha
 
 1. Clona o descarga este repositorio.
-2. Abre `LinuxMint_Scripter.html` directamente en el navegador (doble clic, o `xdg-open LinuxMint_Scripter.html`).
+2. Abre `LinuxMint-Scripter.html` directamente en el navegador (doble clic, o `xdg-open LinuxMint-Scripter.html`).
 3. Pulsa **⚙ Ajustes** y elige tu proveedor:
    - **Local / compatible OpenAI**: pulsa uno de los chips (LM Studio, Ollama…) o escribe tu propia URL base, y añade la clave si el servidor la exige.
    - **Anthropic (Claude)**: pega tu clave `sk-ant-…`.
