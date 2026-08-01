@@ -14,8 +14,10 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 
 <img width="1909" height="852" alt="1  Inicio" src="https://github.com/user-attachments/assets/9cf24f11-a3e9-4876-b5c4-3a9e4b941ed0" />
 <img width="1907" height="859" alt="2  Detecta-Errores" src="https://github.com/user-attachments/assets/de798e51-0222-45a2-bf6b-6d9d285e292e" />
+
 <img width="1919" height="864" alt="3  ejemplo-LinuxMintScripter" src="https://github.com/user-attachments/assets/1e2d8f7b-10ff-41e4-8ef8-eea689efcf35" />
 <img width="1901" height="852" alt="4  Revision-opciones" src="https://github.com/user-attachments/assets/9473ef85-299b-4e15-850b-17985820f952" />
+
 <img width="1912" height="853" alt="5  Historial-menu" src="https://github.com/user-attachments/assets/0d715ac7-5ef7-4fbe-a641-6ec8ad931672" />
 <img width="1907" height="852" alt="6  Revision-Iterativa" src="https://github.com/user-attachments/assets/e616c213-e752-4cee-a238-9b3a41996308" />
 
