@@ -12,8 +12,6 @@ LinuxMint Scripter es una aplicación web de **un único archivo HTML** (HTML + 
 Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API compatible con OpenAI o Anthropic** — o en la nube (OpenRouter, Groq, Mistral, Google, Hugging Face)— usando tu propia clave. No hay servidor intermedio: la conexión, el almacenamiento y el cifrado ocurren enteramente dentro de tu navegador.
 
 
-<img width="720" height="480" alt="linuxmint-scripter" src="https://github.com/user-attachments/assets/ea1b078d-734d-49c7-ace4-c72af28c2e07" />
-
 <img width="1909" height="852" alt="1  Inicio" src="https://github.com/user-attachments/assets/9cf24f11-a3e9-4876-b5c4-3a9e4b941ed0" />
 <img width="1907" height="859" alt="2  Detecta-Errores" src="https://github.com/user-attachments/assets/de798e51-0222-45a2-bf6b-6d9d285e292e" />
 
