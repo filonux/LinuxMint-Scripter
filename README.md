@@ -1,4 +1,4 @@
-# LinuxMint Scripter
+# <img src="assets/icon.png" width="32" alt="Icono de LinuxMint Scripter" /> LinuxMint Scripter
 
 **Generador y revisor de scripts (Bash / Python) asistido por IA, hecho a medida para Linux Mint 22.3 «Zena»**
 
@@ -7,19 +7,18 @@
 ![Hecho para](https://img.shields.io/badge/hecho%20para-Linux%20Mint%2022.3-green.svg)
 ![Arquitectura](https://img.shields.io/badge/arquitectura-100%25%20cliente-lightgrey.svg)
 
-LinuxMint Scripter es una aplicación web de **un único archivo HTML** (HTML + CSS + JavaScript vanilla, sin frameworks ni paso de compilación) que traduce peticiones en lenguaje natural a scripts de **Bash o Python 3** listos para ejecutar en Linux Mint 22.3, o a comandos de terminal sueltos. A diferencia de pedirle lo mismo a un chatbot genérico, lleva integrado el conocimiento específico de Mint (Cinnamon, Nemo, `snapd` bloqueado de fábrica, Flatpak/Flathub, `mintupdate-cli`, Timeshift…) y está explícitamente instruida para no disfrazar de "solución para Mint" un script pensado para Ubuntu/GNOME genérico.
+LinuxMint Scripter es una aplicación web de **un único archivo HTML** (HTML + CSS + JavaScript vanilla, sin frameworks ni paso de compilación) que traduce peticiones en lenguaje natural a scripts de **Bash o Python 3** listos para ejecutar en Linux Mint 22.3, o a comandos de terminal sueltos. A diferencia de pedirle lo mismo a un chatbot genérico, lleva integrado el conocimiento específico de Mint y está explícitamente instruida para no disfrazar de "solución para Mint" un script pensado para Ubuntu/GNOME genérico.
 
-Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API compatible con OpenAI o Anthropic** — o en la nube (OpenRouter, Groq, Mistral, Google, Hugging Face)— usando tu propia clave. No hay servidor intermedio: la conexión, el almacenamiento y el cifrado ocurren enteramente dentro de tu navegador.
+Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API compatible con OpenAI o Anthropic** — o en la nube (OpenRouter, Groq, Mistral, Google, Hugging Face) — usando tu propia clave. No hay servidor intermedio: la conexión, el almacenamiento y el cifrado ocurren enteramente dentro de tu navegador.
 
+### Vista previa
 
-<img width="1909" height="852" alt="1  Inicio" src="https://github.com/user-attachments/assets/9cf24f11-a3e9-4876-b5c4-3a9e4b941ed0" />
-<img width="1907" height="859" alt="2  Detecta-Errores" src="https://github.com/user-attachments/assets/de798e51-0222-45a2-bf6b-6d9d285e292e" />
+https://github.com/user-attachments/assets/50c867ca-7419-453e-b825-7feedd9fcb56
 
-<img width="1919" height="864" alt="3  ejemplo-LinuxMintScripter" src="https://github.com/user-attachments/assets/1e2d8f7b-10ff-41e4-8ef8-eea689efcf35" />
-<img width="1901" height="852" alt="4  Revision-opciones" src="https://github.com/user-attachments/assets/9473ef85-299b-4e15-850b-17985820f952" />
-
-<img width="1912" height="853" alt="5  Historial-menu" src="https://github.com/user-attachments/assets/0d715ac7-5ef7-4fbe-a641-6ec8ad931672" />
-<img width="1907" height="852" alt="6  Revision-Iterativa" src="https://github.com/user-attachments/assets/e616c213-e752-4cee-a238-9b3a41996308" />
+<img width="1909" height="852" alt="Inicio" src="https://github.com/user-attachments/assets/e02274cb-1da0-4dc5-81f4-bde2f158a415" />
+<img width="1901" height="852" alt="Revision-opciones" src="https://github.com/user-attachments/assets/95925ab2-d1c5-4bd7-a41a-e70702ce927f" />
+<img width="1907" height="852" alt="Revision-Iterativa" src="https://github.com/user-attachments/assets/83449d0b-fb4a-4899-bf19-1ea6ce37820e" />
+<img width="1912" height="853" alt="Historial-menu" src="https://github.com/user-attachments/assets/c2e9369a-db5f-4d0e-ab8a-bafdc1ec3c32" />
 
 
 ## Índice
@@ -28,6 +27,7 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 - [Características](#características)
 - [Requisitos](#requisitos)
 - [Puesta en marcha](#puesta-en-marcha)
+- [Icono y acceso directo con Scriptya (opcional)](#icono-y-acceso-directo-con-scriptya-opcional)
 - [Flujo de uso típico](#flujo-de-uso-típico)
 - [Proveedores de modelos compatibles](#proveedores-de-modelos-compatibles)
 - [Privacidad y seguridad](#privacidad-y-seguridad)
@@ -37,31 +37,31 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 
 ## ¿Por qué esta herramienta?
 
-- **Contexto real de Mint 22.3, no genérico.** El *system prompt* incorpora de serie los hechos que distinguen a Mint de Ubuntu/GNOME: gestor de archivos Nemo, snap bloqueado, Flatpak listo, particularidades de `mintupdate-cli`, Timeshift, Python 3.12 preinstalado…
+- **Contexto real de Mint 22.3: Un traje a medida** El *system prompt* incorpora de serie los hechos que distinguen a Mint de Ubuntu/GNOME: gestor de archivos Nemo, snap bloqueado, Flatpak listo, particularidades de `mintupdate-cli`, Timeshift, Python 3.12 preinstalado…
 - **No solo genera, también audita.** La revisión iterativa encadena varios pases de auditoría/corrección sobre el script completo, inspirados en los bucles «planificar → aplicar → verificar» de la codificación agéntica.
 - **Cero instalación.** Es un `.html` suelto: se abre con doble clic y ya está.
-- **Multi-proveedor y con tu propia clave (BYOK).** Modelo local o cualquier API en la nube compatible con OpenAI o Claude.
+- **Multi-proveedor y con tu propia clave (BYOK).** Tú decides si usas Claude, un modelo local o cualquier API en la nube compatible con OpenAI.
 - **Nada sale de tu navegador** salvo las llamadas al proveedor de IA que elijas: sin cuentas, sin telemetría, sin backend propio que mantener.
 
 ## Características
 
 ### Generación asistida por IA
 - Chat en lenguaje natural para pedir scripts o comandos.
-- Selector de lenguaje: Auto (decide el modelo), forzar Bash o forzar Python.
-- **Modo verificación**: pide una explicación línea a línea del script.
-- **Plantilla Terminal**: limita la respuesta a comandos sueltos, sin generar un script completo.
+- Selector de lenguaje: 🧠 Auto (decide el modelo), 🐚 forzar Bash o 🐍 forzar Python 3.
+- 🛡 **Modo verificación**: pide una explicación línea a línea del script.
+- ⌨ **Plantilla Terminal**: limita la respuesta a comandos sueltos, sin generar un script completo.
 - Plantillas rápidas para tareas habituales (instalar paquetes, cron, backup con `rsync`, unidad `systemd`, red con `nmcli`, limpieza del sistema, monitorización con alertas).
 - Adjunta imágenes (Ctrl+V o arrastrar) para modelos con visión — útil para pegar una captura de un error de terminal.
 - Sube un script existente (`.sh`, `.py`, `.service`, `.yaml`…) para que el modelo lo revise.
 
-### Revisión y edición de código
+### 🔍 Revisión y edición de código
 - Editor con resaltado de sintaxis (CodeMirror) para Bash, Python, YAML y TOML, con buscar/reemplazar integrado.
 - Selecciona cualquier fragmento del script (o haz clic en el número de línea) para preguntar, corregir o pedir una explicación **solo de esa parte**, con vista de diff antes/después al aplicar un cambio.
-- **Revisión iterativa**: de 1 a 3 pases automáticos de auditoría y corrección del script completo, con puntuación por pase y resumen de cambios.
+- 🔁 **Revisión iterativa**: de 1 a 3 pases automáticos de auditoría y corrección del script completo, con puntuación por pase y resumen de cambios.
 - Detección local (heurística, basada en patrones) de comandos potencialmente destructivos (`rm -rf`, `dd`, `mkfs`, `shutil.rmtree`…) y de posibles problemas de sintaxis, resaltados directamente en el editor.
 - Acceso directo a **shellcheck.net** con el script ya copiado, para un análisis real.
 
-### Despliegue de scripts
+### 📦 Despliegue de scripts
 - Genera un paquete de despliegue a partir del script del editor: ruta de instalación, ámbito (solo tu usuario o todo el sistema) y permisos.
 - Programación opcional: tarea **cron** (con atajos: cada hora, diario, semanal, al arrancar), **servicio systemd** o **servicio + temporizador** (con `OnCalendar` y `Persistent=true`).
 - Pasos listos para copiar y pegar en la terminal, o descarga directa de un instalador `.sh`.
@@ -79,10 +79,10 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 
 - Un navegador moderno (Chrome, Firefox, Edge…).
 - Conexión a internet para cargar las librerías de la interfaz (CodeMirror, tipografías) y para las llamadas al proveedor de IA elegido, salvo que sirvas esos recursos tú mismo.
-- **Una clave de API**, de alguno de estos dos tipos:
-  - Un servidor local (**LM Studio**, **Ollama**) o una API en la nube compatible con OpenAI (**OpenRouter, Groq, Mistral, Google, Hugging Face**).
-  - Clave de la **API de Anthropic**
-    
+- **Acceso a un proveedor de modelos**, de alguno de estos tipos:
+  - Un servidor local (**LM Studio**, **Ollama**) — normalmente sin clave — o una API en la nube compatible con OpenAI (**OpenRouter, Groq, Mistral, Google, Hugging Face**), que sí la exige.
+  - Clave de la **API de Anthropic**.
+
 ## Puesta en marcha
 
 1. Clona o descarga este repositorio.
@@ -93,22 +93,30 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 4. Elige un modelo en el selector de la barra superior (se autocompleta con los modelos disponibles del proveedor conectado).
 5. Escribe tu petición en el chat y pulsa **Enviar**.
 
+## Icono y acceso directo con Scriptya (opcional)
+
+Al ser un único `.html` suelto, LinuxMint Scripter no tiene lanzador ni icono propios: para abrirlo hay que ir a buscar el archivo cada vez, y si te creas un acceso directo a mano, por defecto llevará el icono genérico del navegador. Si prefieres un acceso con icono propio, tanto en el menú de Cinnamon como en el escritorio, échale un ojo a [**Scriptya**](https://github.com/filonux/Scriptya), otro proyecto de **Filonux**: un menú de scripts para lanzar, instalar-desinstalar, entre otras cosas. Convierte cualquier script o página HTML en una app independiente —con su propio icono— en el menú de aplicaciones y/o en el escritorio, sin tocar un `.desktop` a mano.
+
+<img src="assets/icon.png" width="128" alt="Icono de LinuxMint Scripter" />
+
+Para usarlo con LinuxMint Scripter, apunta Scriptya directamente al fichero `LinuxMint-Scripter.html`, asígnale como icono el `assets/icon.png` incluido en este repositorio, para añadirlo al menú, al escritorio, o a ambos.
+
 ## Flujo de uso típico
 
 1. Describe lo que necesitas en el chat (o usa una plantilla rápida).
 2. El script aparece en el editor de la derecha, con resaltado de sintaxis.
 3. Revisa el aviso de comandos peligrosos o posibles errores si aparece alguno.
 4. Ajusta el script a mano, pide una revisión de un fragmento concreto, o lanza la revisión iterativa completa.
-5. Copia el script, guárdalo, o pulsa **Instalar** para generar los pasos (o el `.sh`) de despliegue, con o sin tarea programada.
+5. Copia el script, guárdalo, o pulsa **📦 Instalar** para generar los pasos (o el `.sh`) de despliegue, con o sin tarea programada.
 
 ## Proveedores de modelos compatibles
 
 | Proveedor | Tipo | Clave requerida |
 |---|---|---|
+| Anthropic (Claude) | Directo, oficial | Sí |
 | LM Studio | Local | No |
 | Ollama | Local | No |
 | OpenAI | Nube | Sí |
-| Anthropic (Claude) | Directo, oficial | Sí |
 | OpenRouter | Nube | Sí |
 | Groq | Nube | Sí |
 | Mistral | Nube | Sí |
@@ -122,7 +130,6 @@ Habla con la **API Local (LM Studio, Ollama)** o con **cualquier servidor/API co
 - Los ajustes, las claves de API y el historial de scripts se guardan solo en el `localStorage` de tu navegador.
 - Puedes exportar tus claves a un `.json` (para restaurarlas en otro navegador o equipo) y protegerlo opcionalmente con contraseña — cifrado **AES-256-GCM** con derivación **PBKDF2-SHA256** (600.000 iteraciones), usando la Web Crypto API nativa del navegador, sin librerías externas.
 - Si exportas las claves **sin** cifrar, trata ese archivo como una contraseña: no lo subas a un repositorio ni lo compartas.
-- Sin cuentas, sin analítica, sin telemetría.
 
 ## Limitaciones conocidas
 
