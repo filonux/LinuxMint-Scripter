@@ -145,6 +145,6 @@ Las *issues* y *pull requests* son bienvenidas. Si propones un cambio grande, ab
 
 Software libre distribuido bajo los términos de la **GNU General Public License v3.0 (GPLv3)**. Consulta el archivo [`LICENSE`](LICENSE) para el texto completo.
 
-## Autor
+---
 
-Desarrollado por **Filonux**.
+Hecho por **[Filonux](https://github.com/filonux)**.
